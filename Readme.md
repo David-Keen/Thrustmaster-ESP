@@ -47,10 +47,10 @@ Byte 1
 1 – not used
 
 Byte 2  
-1 – not used
+1 – not used  
 1 – X  
 1 – O  
-1 – [](Square)  
+1 – \[\] (Square)  
 1 – Options  
 1 – R1/Gear Up  
 1 – /\ (Triangle)  
