@@ -12,14 +12,14 @@ Thrustmaster Wheelbase cable pinout (PS/2 connector, also known as mini-Din 6pin
 
 **Imortant:** Thrustmaster base sends 3v3 to the ESP. Do not send power to it. 3v3 logic levels are used.
 
-| PIN # | Wire Colour | Function | Notes                                                                           |
-| ----- | ----------- | -------- | ------------------------------------------------------------------------------- |
+| PIN # | Wire Colour | Function | Notes                                                       |
+| ----- | ----------- | -------- | ----------------------------------------------------------- |
 | 1     | Green       | not used |
 | 2     | Blue        | Ground   |
-| 3     | White       | MISO     | Mmaster in, slave out - to read the data from the wheel                         |
-| 4     | Yellow      | SS       | Slave select, or PL - parallel load, set it to 0 when you want to read the data |
-| 5     | Red         | CLK      | Clock impulses                                                                  |
-| 6     | Black       | Power    | +3.3                                                                            |
+| 3     | White       | MISO     | Mmaster in, slave out. Used to send data to the base        |
+| 4     | Yellow      | SS       | Slave select/Chip select When low, we can send data to MISO |
+| 5     | Red         | CLK      | Clock impulses                                              |
+| 6     | Black       | Power    | +3.3                                                        |
 
 <br><br>
 ESP -> T300
