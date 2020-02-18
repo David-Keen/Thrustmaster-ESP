@@ -68,4 +68,4 @@ Byte 3
 
 # Thanks to
 
-Taras Ivaniukovich ([Blog](https://rr-m.org/blog/))
+Taras I ([Blog](https://rr-m.org/blog/))
