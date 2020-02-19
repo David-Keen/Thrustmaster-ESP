@@ -34,37 +34,46 @@ ESP -> T300
 
 # Button Mappings
 
-Button mappings (we send 8 bytes to wheelbase, only 3 first bytes matter, only 15 bits are used for buttons)
+Button mappings (we send 8 bytes to wheelbase, the first 3/8 bytes matter, only 15 bits are used for buttons)
 
-Byte 1  
-1 - not used  
-1 - not used  
-0 - not used  
-1 - not used  
-0 - not used  
-0 - not used  
-0 - not used  
-1 – not used
+## Byte 1
 
-Byte 2  
-1 – not used  
-1 – X  
-1 – O  
-1 – \[\] (Square)  
-1 – Options  
-1 – R1/Gear Up  
-1 – /\ (Triangle)  
-1 – R2 (button 9)
+| Bit Index | Default Flag | Notes    |
+| --------- | ------------ | -------- |
+| 0         | 1            | Constant |
+| 1         | 1            | Constant |
+| 2         | 0            | Constant |
+| 3         | 1            | Constant |
+| 4         | 0            | Constant |
+| 5         | 0            | Constant |
+| 6         | 0            | Constant |
+| 7         | 1            | Constant |
 
-Byte 3  
-1 – Share  
-1 – PS  
-1 – D-Pad Down  
-1 – L1/Gear Down  
-1 – D-Pad Right  
-1 - D-Pad Left  
-1 - D-Pad Up  
-1 - L2
+## Byte 2
+
+| Bit Index | Default Flag | Name       | Notes                         |
+| --------- | ------------ | ---------- | ----------------------------- |
+| 8         | 1            | N/A        | Constant                      |
+| 9         | 1            | Cross      | Set to zero to "Press" button |
+| 10        | 1            | Circle     | Set to zero to "Press" button |
+| 11        | 1            | Square     | Set to zero to "Press" button |
+| 12        | 1            | Options    | Set to zero to "Press" button |
+| 13        | 1            | R1/Gear Up | Set to zero to "Press" button |
+| 14        | 1            | Triangle   | Set to zero to "Press" button |
+| 15        | 1            | R2         | Set to zero to "Press" button |
+
+## Byte 3
+
+| Bit Index | Default Flag | Name         | Notes                         |
+| --------- | ------------ | ------------ | ----------------------------- |
+| 16        | 1            | Share        | Constant                      |
+| 17        | 1            | PS           | Set to zero to "Press" button |
+| 18        | 1            | D-pad Down   | Set to zero to "Press" button |
+| 19        | 1            | L1/Gear Down | Set to zero to "Press" button |
+| 20        | 1            | D-dad Right  | Set to zero to "Press" button |
+| 21        | 1            | D-pad Left   | Set to zero to "Press" button |
+| 22        | 1            | D-pad Up     | Set to zero to "Press" button |
+| 23        | 1            | L2           | Set to zero to "Press" button |
 
 # Thanks to
 
